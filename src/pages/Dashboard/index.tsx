@@ -101,8 +101,8 @@ const Dashboard: React.FC = () => {
                   <td className="title">{transaction.title}</td>
                   <td className={transaction.type}>
                     {transaction.type === 'income'
-                      ? ` ${formatValue(transaction.value)}`
-                      : `- ${formatValue(transaction.value)}`}
+                      ? `R$ ${formatValue(transaction.value)}`
+                      : `- R$ ${formatValue(transaction.value)}`}
                   </td>
                   <td>{transaction.category.title}</td>
                   <td>{moment(transaction.created_at).format('DD/MM/YYYY')}</td>
